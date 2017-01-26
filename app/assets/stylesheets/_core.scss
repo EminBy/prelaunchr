@@ -247,12 +247,13 @@ html.home{
 }
 
 #refer .header{
-	height: 50px;
-	background: #074E6F;
+	height: 40px;
+	background: image-url("biker/thankyou.jpg") center center no-repeat;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
 	position: relative;
+	background-color: #E3BB01;
 }
 
 #refer .header .content{
@@ -278,7 +279,6 @@ html.home{
 	line-height: 0;
 	margin-right: 14px;
 	letter-spacing: 1px;
-	background: image-url("refer/logo.png") 0 0 no-repeat;
 	background-size: 106px 19px;
 	height: 19px;
 	width: 106px;
@@ -286,8 +286,8 @@ html.home{
 }
 
 #refer .hero{
-	background: #F1F0EE;
-	height: 391px;
+    background: image-url("biker/biker2.jpg") center center no-repeat;
+    background-size: 1600px 446px;
 	overflow: hidden;
 }
 
@@ -325,26 +325,27 @@ html.home{
 
 #refer .share-wrap .why{
 	font-size: 16px;
-	color: #555556;
-	font-weight: bold;
+	color: #000000;
+	font-weight: bolder;
 	margin-top: 42px;
 }
 
 #refer .share-wrap .title{
-	font-size: 30px;
-	line-height: 40px;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #074E6F;
-	margin-top: 18px;
-	letter-spacing: .13em;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #E3BB01;
+    margin-top: 18px;
+    letter-spacing: 0.05em;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
+	color: #000000;
 	font-size: 14px;
 	text-transform: none;
 	margin-top: 15px;
+    font-weight: bold
 }
 
 #refer .share-wrap .copy-link{
@@ -376,7 +377,7 @@ html.home{
 }
 
 #refer .share-wrap .social-links .twit{
-	background: image-url("refer/twit.png");
+	background: image-url("biker/twitter.png");
 	background-size: 27px 27px;
 	width: 27px;
 	height: 27px;
@@ -384,8 +385,8 @@ html.home{
 
 #refer .share-wrap .social-links .sep{
 	height: 28px;
-	width: 1px;
-	background: #BAB9BA;
+	width: 3px;
+	background: #000000;
 	margin: 0 20px;
 }
 
@@ -403,10 +404,10 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
-	font-weight: bold;
+	color: #E3BB01;
+	font-weight: bolder;
 	margin: 20px 0 0 0;
-	letter-spacing: 2px;
+	letter-spacing: 0.5px;
 	text-transform: uppercase;
 }
 
@@ -414,7 +415,7 @@ html.home{
 	height: 4px;
 	width: 100%;
 	background: image-url("refer/progress-bg.png") 0 0 repeat-x;
-	background-size: 1px 4px;
+	background-size: 6px 4px;
 	position: absolute;
 	top: 100px;
 	z-index: 0;
@@ -427,11 +428,11 @@ html.home{
 }
 
 #refer .prizes .progress .mover .bar{
-	background: image-url("refer/progress-done.png") 0 0 repeat-x;
+	background: image-url("biker/pb40.jpg") 0 0 repeat-x;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
-	background-size: 1px 4px;
+	background-size: 4px 4px;
 }
 
 #refer .prize-two .progress .mover .bar{ width: 312px; }
@@ -463,11 +464,15 @@ html.home{
 #refer .prizes .products li.title .friends{
 	margin-top: 7px;
 	letter-spacing: 2px;
+    font-weight: bolder;
+    color: #000000;
 }
 
 #refer .prizes .products li.title .rewards{
 	margin-top: 45px;
 	letter-spacing: 2px;
+    font-weight: bolder;
+    color: #000000;
 }
 
 #refer .prizes .products li.product{
@@ -476,7 +481,8 @@ html.home{
 	width: 125px;
 	margin-right: 129px;
 	float: left;
-	position: relative;
+	position: relative;;
+    font-size: 14px;
 }
 
 #refer .prizes .products li.product .circle{
@@ -516,7 +522,8 @@ html.home{
 
 #refer .prizes .products li.product p{
 	text-align: center;
-	font-weight: 500;
+	font-weight: bolder;
+    color: #000000;
 }
 
 #refer .prizes .products li.product:last-child{
@@ -540,14 +547,14 @@ html.home{
 
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
-	background: #074E6F;
-	border-color: #074E6F;
+	background: #e3bb00;
+	border-color: #e3bb00;
 }
 
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
-	border: 4px solid #074E6F;
+	border: 4px solid #e3bb00;
 	position: absolute;
 	top: -285px;
 	left: -32px;
@@ -567,32 +574,37 @@ html.home{
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: #e3bb00;
 	width: 100%;
-	font-weight: 500;
+	font-weight: bolder;
 	margin-top: 30px;
+    font-family: Proxima Nova Alt;
 }
 
 #refer .prizes p.place span{
-	color: #995F5E;
+	color: #5a5959;
+    font-weight: bolder;
+    font-family: Proxima Nova Alt;
 }
 
 #refer .prizes p.check{
-	text-align: center;
-	font-size: 16px;
-	color: #858181;
-	width: 100%;
-	font-weight: 500;
-	margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #5a5959;
+    width: 100%;
+    font-weight: bolder;
+    margin-top: 5px;
+    font-family: Proxima Nova Alt;
 }
 
 #refer .prizes p.ship{
 	text-align: center;
 	font-size: 16px;
-	color: #858181;
+	color: #5a5959;
 	width: 100%;
-	font-weight: 500;
+	font-weight: bold;
 	margin-top: 50px;
+    font-family: Proxima Nova Alt;
 }
 
 #refer .prizes a.policy{
@@ -626,7 +638,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .header .logo{
-		background: image-url("refer/logo@2x.png") 0 0 no-repeat;
+		background: image-url("biker/thankyou.jpg") center center no-repeat;
 		background-size: 106px 19px;
 	}
 
@@ -641,7 +653,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .share-wrap .social-links .twit{
-		background: image-url("refer/twit@2x.png");
+		background: image-url("biker/twitter.png");
 		background-size: 27px 27px;
 	}
 
@@ -651,7 +663,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .prizes .progress .mover .bar{
-		background: image-url("refer/progress-done@2x.png") 0 0 repeat-x;
+		background: image-url("biker/pb40.jpg") 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 

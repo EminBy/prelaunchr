@@ -7,9 +7,7 @@
 
 <div class="hero">
   <div class="page-content clearfix">
-    <div class="mammoth">
-      <span class="need brandon">Shaving Is<br>Evolving</span>
-    </div>
+  
     <div class="share-wrap">
       <p class="why brandon">Don't leave your friends behind</p>
       <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
@@ -45,7 +43,7 @@
   <div class="page-content">
     <p class="callout brandon">Here's How It Works:</p>
     <ul class="products clearfix">
-      <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+      <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Awesome Perks</p></li>
       <% stops.each do |stop| %>
         <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
           <div class="circle"><%= stop["count"] %></div>
@@ -53,7 +51,7 @@
           <p><%= stop["html"].html_safe %></p>
 
           <div class="tooltip">
-            <img src="<%= stop["image"] %>" height="254">
+            <img src="<%= stop["image"] %>" width=190px height="254">
           </div>
         </li>
       <% end %>
@@ -81,7 +79,7 @@
     <% end %>
     <p class="check brandon">Keep checking</p>
 
-    <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>
-    <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+    <p class="ship brandon">We ship to the U.S.</p>
+    <!-- <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a> -->
   </div>
 </div>
