@@ -286,7 +286,7 @@ html.home{
 }
 
 #refer .hero{
-    background: image-url("biker/biker2.jpg") center center no-repeat;
+    background: image-url("biker/biker_2.jpg") 0 0 no-repeat;
     background-size: 1600px 446px;
 	overflow: hidden;
 }
@@ -316,11 +316,11 @@ html.home{
 
 #refer .share-wrap{
 	float: right;
-	width: 400px;
+	width: 350px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 60px;
+	margin-right: 10px;
 }
 
 #refer .share-wrap .why{
@@ -385,9 +385,9 @@ html.home{
 
 #refer .share-wrap .social-links .sep{
 	height: 28px;
-	width: 3px;
-	background: #000000;
+	width: 2px;
 	margin: 0 20px;
+	background: image-url("biker/divider.jpg");
 }
 
 #refer .prizes{
