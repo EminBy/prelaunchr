@@ -70,20 +70,12 @@ html.home{
 	margin: 23px auto 0;
 }
 
-#home .form-wrap .key{
-	width: 46px;
-	height: 19px;
-	margin: 0 auto;
-	background: image-url("home/key.png") 0 0 no-repeat;
-	background-size: 46px 19px;
-}
-
 #home .form-wrap .byline{
-	font-size: 15px;
+	font-size: 18px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #e3bb08;
 	text-align: center;
-	font-weight: bold;
+	font-weight: bolder;
 	letter-spacing: 2px;
 	margin: 15px 0;
 }
@@ -92,15 +84,16 @@ html.home{
 	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid #e3bb08;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
+	font-weight: bold;
 }
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #e3bb08;
 	float: left;
 	height: 37px;
 	line-height: 37px;
@@ -109,6 +102,7 @@ html.home{
 	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
+	font-weight: bolder;
 }
 
 #home .form-wrap.ended{
@@ -221,6 +215,14 @@ html.home{
 	text-transform: uppercase;
 	font-size: 14px;
 	text-align: center;
+}
+
+body#home{
+	background: #EDECEA;
+}
+
+.bg-white{
+	background: #fff;
 }
 
 
@@ -606,7 +608,76 @@ html.home{
 	text-decoration: none;
 }
 
+.biker-image{
+	background: image-url("biker/biker1.jpg") 0 0 no-repeat;
+	height: 394px;
+}
 
+.features-margin{
+  margin-top: 30% !important;
+  margin-left: 0% !important;
+}
+
+.features-size{
+	height: 100%;
+	width: 100%;
+}
+
+.feature-text{
+	color:  #e3bb08 !important;
+	font-weight: bolder;
+}
+
+.header-title{
+    margin-left: -23% !important; 
+    margin-top: 3% !important;
+    font-size: 34px;
+    color:  #e3bb08 !important;
+    font-weight: bolder;
+	text-transform: uppercase;
+	font-family: coalition;
+}
+
+.header-subtitle{
+    font-size: 21px;
+    color:  rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+	text-transform: uppercase;
+	font-family: coalition;
+	margin-left: -16% !important;
+	text-align: center;
+}
+
+@media (max-width: 767px) { 
+    .header-title {
+	   font-size: 13px !important;
+	   margin-left: 10% !important;
+	}
+
+    .header-subtitle {
+	   font-size: 12px !important;
+	   margin-left: 0% !important;
+	}
+	.features-margin{
+	  margin-top: 15% !important;
+	}
+} 
+
+
+@media (max-width: 1200px) { 
+    .header-title {
+	   font-size: 15px !important;
+	   margin-left: 10% !important;
+	}
+
+    .header-subtitle {
+	   font-size: 12px !important;
+	   margin-left: 0% !important;
+	}
+	.features-margin{
+	  margin-top: 30% !important;
+	}
+}
 
 /*
 	RETINA
@@ -615,15 +686,13 @@ html.home{
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
+
+
 	#home .hero{
 		background: image-url("home/hero@2x.jpg") center center no-repeat;
 		background-size: 1600px 446px;
 	}
 
-	#home .form-wrap .key{
-		background: image-url("home/key@2x.png") 0 0 no-repeat;
-		background-size: 46px 19px;
-	}
 
 	#refer .header .logo{
 		background: image-url("refer/logo@2x.png") 0 0 no-repeat;

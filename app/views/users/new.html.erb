@@ -1,12 +1,60 @@
-<div class="hero">
-  <p class="large brandon">Harry&#8217;s is live</p>
-  <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
+<div class="row bg-white" >
+  <div class="col-md-8 col-xs-4">
+    <%= image_tag("/assets/biker/biker1.jpg", :class => "img-responsive") %>
+  </div>
+
+  <div class="col-md-4 col-xs-4">
+
+    <div class="row header-title">
+      The Rider X1+ is coming
+    </div>
+    <div class="row header-subtitle">
+      The Ultimate Motorcycle <br>Audio Experience
+    </div>
+
+    <div class= "row">
+	    <div class="top-margin-7 features-margin">
+	        <div class="col-md-3 col-xs-3">
+	          <%= image_tag("/assets/biker/biker-icon.jpg", :class => "img-responsive features-size") %>
+
+	        </div>
+	        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1">
+	          <%= image_tag("/assets/biker/ear-shield-icon.jpg",  :class => "img-responsive") %>
+
+	        </div>
+	        <div class="col-md-3  col-xs-3 col-md-offset-1 col-xs-offset-1">
+	          <%= image_tag("/assets/biker/sound-icon.jpg",  :class => "img-responsive") %>
+
+	        </div>
+	    </div>
+    </div>
+
+    <div class= "row">
+	    <div class="">
+	        <div class="col-md-3 col-xs-3">
+	          <nav class="hidden-xs feature-text"> 
+	              &nbsp;&nbsp;&nbsp;Rider <br>
+	              &nbsp;Comfort </nav>
+	        </div>
+	        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1 feature-text">
+	          <nav class="hidden-xs"> Hearing Protection </nav>
+	        </div>
+	        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1 feature-text">
+	          <nav class="hidden-xs"> Selective Listening </nav>
+	        </div>
+	    </div>
+    </div>
+  </div>
 </div>
 
-<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-  <% if Rails.application.config.ended %>
-    <%= render "users/campaign_ended" %>
-  <% else %>
-    <%= render "users/campaign_ongoing" %>
-  <% end %>
+<div class="row">
+    <div class="col-md-12 form-color">
+		<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+		  <% if Rails.application.config.ended %>
+		    <%= render "users/campaign_ended" %>
+		  <% else %>
+		    <%= render "users/campaign_ongoing" %>
+		  <% end %>
+		</div>
+	</div>
 </div>
