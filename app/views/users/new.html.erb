@@ -1,10 +1,11 @@
 <head>
-	<%= stylesheet_link_tag "bootstrap3.0", :media => "all" %>
+  <%= stylesheet_link_tag "bootstrap3.0", :media => "all" %>
 </head>
 
 <div class="row bg-white" >
-  <div class="col-md-8 col-xs-4">
+  <div class="col-md-8 col-xs-8" id="counter">
     <%= image_tag("/assets/biker/biker1.jpg", :class => "img-responsive") %>
+    <%= image_tag("/assets/biker/kickstarter.png", :class => "img-responsive", :id => "sticker") %>
   </div>
 
   <div class="col-md-4 col-xs-4">
@@ -13,52 +14,64 @@
       The Rider X1+ is coming
     </div>
     <div class="row header-subtitle">
-      The Ultimate Motorcycle <br>Audio Experience
+      <nav class="hidden-xs"> The Ultimate Motorcycle <br>Audio Experience </nav>
     </div>
 
     <div class= "row">
-	    <div class="top-margin-7 features-margin">
+	    <div class="features-margin">
 	        <div class="col-md-3 col-xs-3">
-	          <%= image_tag("/assets/biker/biker-icon.jpg", :class => "img-responsive features-size") %>
 
-	        </div>
+            <div class="mytooltip"><%= image_tag("/assets/biker/biker-icon.jpg",  :class => "img-responsive") %>
+              <span class="mytooltiptext left-tip">
+                We designed everything based on feedback from hundreds of riders like yourself. Our earbuds, don’t fall out while riding and they fit in your helmet. Wear them on the ride or at the gym. 
+              </span>
+            </div>
+          </div>
+      
 	        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1">
-	          <%= image_tag("/assets/biker/ear-shield-icon.jpg",  :class => "img-responsive") %>
+            <div class="mytooltip"><%= image_tag("/assets/biker/ear-shield-icon.jpg",  :class => "img-responsive") %>
+              <span class="mytooltiptext center-tip">
+                Studies* show, only 15 minutes of Riding can do <span class='feature-text'>permanent damage </span>to your hearing and even helmets don't cut off enough wind noise. <br> Don't lose your hearing. We designed our earbuds to protect your hearing. As a result, you can hear every beat at any speed. <br> <span class='small-font'> *http://www.hearingtestlabs.com/motorcycle.htm & https://www.ncbi.nlm.nih.gov/pmc/articles/PMC539364/ </span>
+              </span>
+            </div>
+          </div>
 
-	        </div>
-	        <div class="col-md-3  col-xs-3 col-md-offset-1 col-xs-offset-1">
-	          <%= image_tag("/assets/biker/sound-icon.jpg",  :class => "img-responsive") %>
-
-	        </div>
+          <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1">
+            <div class="mytooltip"><%= image_tag("/assets/biker/sound-icon.jpg",  :class => "img-responsive") %>
+              <span class="mytooltiptext right-tip">
+                Isolation keeps unwanted road noise out. Our intelligent software 
+                allows you to hear Horns, Sirens and other important sounds. Our 
+                beats feel real. We source our speakers from a company with 
+                decades of experience. It’s audiophile level sound.
+              </span>
+            </div>
+          </div>
 	    </div>
     </div>
 
     <div class= "row">
-	    <div class="">
-	        <div class="col-md-3 col-xs-3">
-	          <nav class="hidden-xs feature-text"> 
-	              &nbsp;&nbsp;&nbsp;Rider <br>
-	              &nbsp;Comfort </nav>
-	        </div>
-	        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1 feature-text">
-	          <nav class="hidden-xs"> Hearing Protection </nav>
-	        </div>
-	        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1 feature-text">
-	          <nav class="hidden-xs"> Selective Listening </nav>
-	        </div>
-	    </div>
+        <div class="col-md-3 col-xs-3">
+            <nav class="hidden-xs feature-text"> 
+              For The Rider
+            </nav>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <nav class="hidden-xs feature-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Avoid Hearing <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damage </nav>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <nav class="hidden-xs feature-text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hear The <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Important Stuff </nav>
+        </div>
     </div>
   </div>
 </div>
 
 <div class="row">
-    <div class="col-md-12 form-color">
-		<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-		  <% if Rails.application.config.ended %>
-		    <%= render "users/campaign_ended" %>
-		  <% else %>
-		    <%= render "users/campaign_ongoing" %>
-		  <% end %>
-		</div>
-	</div>
+
+    <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+      <% if Rails.application.config.ended %>
+        <%= render "users/campaign_ended" %>
+      <% else %>
+        <%= render "users/campaign_ongoing" %>
+      <% end %>
+    </div>
 </div>

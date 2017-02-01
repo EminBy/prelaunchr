@@ -1,0 +1,155 @@
+.mytooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.mytooltip .mytooltiptext {
+    visibility: hidden;
+    width: 390px;
+    background-color: #fff;
+    color: #403d3d;
+    text-align: center;
+    border-radius: 0px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index:1;
+    bottom: 135%;
+    font-size: 11px;
+    border : 6px solid #e3bb08;
+    font-weight: bold;
+}
+
+.small-font{
+    font-size: 7px;
+}
+
+.left-tip{
+    left: 0%;
+    margin-left: -30px;
+}
+
+.center-tip{
+    left: -60%;
+    margin-left: -105px;
+}
+
+.right-tip{
+    left: -60%;
+    margin-left: -250px;
+}
+
+.mytooltip .mytooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-left: -5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #e3bb08 transparent transparent transparent;
+}
+
+.mytooltip .left-tip::after {
+	left: 13%;
+}
+
+.mytooltip .center-tip::after {
+	left: 40%;
+}
+
+.mytooltip .right-tip::after {
+	left: 78%;
+}
+
+.mytooltip:hover .mytooltiptext {
+    visibility: visible;
+}
+
+#counter{
+  position: relative;
+  display: inline;
+}
+
+#sticker{
+	position:absolute;
+	top: 72%;
+	left: 8%;
+	max-width: 100%;
+	min-width: 10%;
+}
+
+.features-margin{
+  margin-top: 30% !important;
+  margin-left: 0% !important;
+}
+
+.features-size{
+	height: 100%;
+	width: 100%;
+}
+
+.feature-text{
+	color:  #e3bb08 !important;
+	font-weight: bolder;
+}
+
+.header-title{
+    margin-left: -23% !important; 
+    margin-top: 3% !important;
+    font-size: 34px;
+    color:  #e3bb08 !important;
+    font-weight: bolder;
+	text-transform: uppercase;
+	font-family: coalition;
+}
+
+.header-subtitle{
+    font-size: 21px;
+    color:  rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+	text-transform: uppercase;
+	font-family: coalition;
+	margin-left: -35% !important;
+	text-align: center;
+}
+
+@media (max-width: 767px) { 
+    .header-title {
+	   font-size: 13px !important;
+	   margin-left: -8% !important;
+	}
+
+    .header-subtitle {
+	   font-size: 7px !important;
+	   margin-left: 0% !important;
+	}
+	.features-margin{
+	  margin-top: 15% !important;
+	}
+
+    .feature-text{
+      font-size: 1px !important;
+    }
+    
+} 
+
+@media (max-width: 900px) { 
+	.features-margin{
+	  margin-top: 25% !important;
+	}
+}
+
+@media (max-width: 1200px) { 
+    .header-title {
+	   font-size: 15px !important;
+	   margin-left: 8% !important;
+	}
+
+    .header-subtitle {
+	   font-size: 12px !important;
+	   margin-left: 0% !important;
+	}
+
+    .feature-text{
+      font-size: 12px !important;
+    }
+}
