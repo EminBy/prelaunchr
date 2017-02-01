@@ -2,7 +2,18 @@ development:
   adapter: postgresql
   database: prelaunchr_development
   host: localhost
+  username: postgres
+  password: root
+
 test:
   adapter: postgresql
   database: prelaunchr_test
   host: localhost
+  username: postgres
+  password: root
+production:
+  adapter: postgresql
+  database: prelaunchr_production
+  host: localhost
+  username: postgres
+  password: root
