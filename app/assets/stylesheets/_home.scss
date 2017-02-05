@@ -5,7 +5,7 @@
 
 .mytooltip .mytooltiptext {
     visibility: hidden;
-    width: 390px;
+    width: 750%;
     background-color: #fff;
     color: #403d3d;
     text-align: center;
@@ -14,8 +14,8 @@
     position: absolute;
     z-index:1;
     bottom: 135%;
-    font-size: 11px;
-    border : 6px solid #e3bb08;
+    font-size: 12px;
+    border : 5px solid #e3bb08;
     font-weight: bold;
 }
 
@@ -25,17 +25,17 @@
 
 .left-tip{
     left: 0%;
-    margin-left: -30px;
+    margin-left: -45%;
 }
 
 .center-tip{
-    left: -60%;
-    margin-left: -105px;
+    left: -100%;
+    margin-left: -170%;
 }
 
 .right-tip{
-    left: -60%;
-    margin-left: -250px;
+    left: -260%;
+    margin-left: -280%;
 }
 
 .mytooltip .mytooltiptext::after {
@@ -49,7 +49,7 @@
 }
 
 .mytooltip .left-tip::after {
-	left: 13%;
+	left: 10%;
 }
 
 .mytooltip .center-tip::after {
@@ -78,7 +78,7 @@
 }
 
 .features-margin{
-  margin-top: 30% !important;
+  margin-top: 28% !important;
   margin-left: 0% !important;
 }
 
@@ -90,37 +90,35 @@
 .feature-text{
 	color:  #e3bb08 !important;
 	font-weight: bolder;
+    font-size: 14px;
 }
 
 .header-title{
-    margin-left: -23% !important; 
     margin-top: 3% !important;
-    font-size: 34px;
+    font-size: 30px;
     color:  #e3bb08 !important;
     font-weight: bolder;
 	text-transform: uppercase;
-	font-family: coalition;
+	font-family: Arial Rounded MT Bold;
+    margin-left: -5% !important;
 }
 
 .header-subtitle{
-    font-size: 21px;
+    font-size: 18px;
     color:  rgba(0, 0, 0, 0.5);
     font-weight: bolder;
 	text-transform: uppercase;
-	font-family: coalition;
-	margin-left: -35% !important;
-	text-align: center;
+	font-family: Arial Rounded MT Bold;
+	margin-left: 8% !important;
 }
 
 @media (max-width: 767px) { 
     .header-title {
 	   font-size: 13px !important;
-	   margin-left: -8% !important;
 	}
 
     .header-subtitle {
 	   font-size: 7px !important;
-	   margin-left: 0% !important;
 	}
 	.features-margin{
 	  margin-top: 15% !important;
@@ -141,7 +139,6 @@
 @media (max-width: 1200px) { 
     .header-title {
 	   font-size: 15px !important;
-	   margin-left: 8% !important;
 	}
 
     .header-subtitle {
