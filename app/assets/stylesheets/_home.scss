@@ -1,3 +1,103 @@
+#counter{
+  position: relative;
+  display: inline;
+}
+
+#sticker{
+	position:absolute;
+	top: 72%;
+	left: 8%;
+	max-width: 100%;
+	min-width: 10%;
+}
+
+.features-margin{
+  margin-top: 28% !important;
+  margin-left: 0% !important;
+}
+
+.features-size{
+	height: 100%;
+	width: 100%;
+}
+
+.feature-text{
+	color:  #e3bb08 !important;
+	font-weight: bolder;
+    font-size: 14px;
+}
+
+.header-title{
+    margin-top: 3% !important;
+    font-size: 30px;
+    color:  #e3bb08 !important;
+    font-weight: bolder;
+	text-transform: uppercase;
+	font-family: Arial Rounded MT Bold;
+    margin-left: -5% !important;
+}
+
+.header-subtitle{
+    font-size: 18px;
+    color:  rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+	text-transform: uppercase;
+	font-family: Arial Rounded MT Bold;
+	margin-left: 8% !important;
+}
+
+
+@media (max-width: 767px) { 
+    .header-title {
+	   font-size: 13px !important;
+	}
+
+    .header-subtitle {
+	   font-size: 7px !important;
+	}
+	.features-margin{
+	  margin-top: 15% !important;
+	}
+
+    .feature-text{
+      font-size: 1px !important;
+    }
+    
+} 
+
+@media (max-width: 983px) { 
+	.features-margin{
+	  margin-top: 25% !important;
+	}
+
+    .header-title {
+       font-size: 20px !important;
+       margin-left: -12% !important;
+    }
+
+    .header-subtitle {
+       font-size: 15px !important;
+       margin-left: 0% !important;
+    }
+
+}
+
+@media (min-width: 984px) { 
+    .header-title {
+	   font-size: 26px !important;
+       margin-left: -12% !important;
+	}
+
+    .header-subtitle {
+	   font-size: 18px !important;
+	   margin-left: 0% !important;
+	}
+
+    .feature-text{
+      font-size: 12px !important;
+    }
+}
+
 .mytooltip {
     position: relative;
     display: inline-block;
@@ -49,104 +149,46 @@
 }
 
 .mytooltip .left-tip::after {
-	left: 10%;
+    left: 10%;
 }
 
 .mytooltip .center-tip::after {
-	left: 40%;
+    left: 40%;
 }
 
 .mytooltip .right-tip::after {
-	left: 78%;
+    left: 78%;
 }
 
 .mytooltip:hover .mytooltiptext {
     visibility: visible;
 }
 
-#counter{
-  position: relative;
-  display: inline;
-}
-
-#sticker{
-	position:absolute;
-	top: 72%;
-	left: 8%;
-	max-width: 100%;
-	min-width: 10%;
-}
-
-.features-margin{
-  margin-top: 28% !important;
-  margin-left: 0% !important;
-}
-
-.features-size{
-	height: 100%;
-	width: 100%;
-}
-
-.feature-text{
-	color:  #e3bb08 !important;
-	font-weight: bolder;
-    font-size: 14px;
-}
-
-.header-title{
-    margin-top: 3% !important;
-    font-size: 30px;
-    color:  #e3bb08 !important;
-    font-weight: bolder;
-	text-transform: uppercase;
-	font-family: Arial Rounded MT Bold;
-    margin-left: -5% !important;
-}
-
-.header-subtitle{
-    font-size: 18px;
-    color:  rgba(0, 0, 0, 0.5);
-    font-weight: bolder;
-	text-transform: uppercase;
-	font-family: Arial Rounded MT Bold;
-	margin-left: 8% !important;
-}
-
-@media (max-width: 767px) { 
-    .header-title {
-	   font-size: 13px !important;
-	}
-
-    .header-subtitle {
-	   font-size: 7px !important;
-	}
-	.features-margin{
-	  margin-top: 15% !important;
-	}
-
-    .feature-text{
-      font-size: 1px !important;
+@media (max-width: 1100px) { 
+    .mytooltip .mytooltiptext {
+        width: 600%;
+        font-size: 11px;
     }
-    
-} 
+    .center-font{
+        width: 700% !important;
+        font-size: 11px;
+    }
+    .left-tip{
+        left: 6%;
+        margin-left: -44% !important;
+    }
 
-@media (max-width: 900px) { 
-	.features-margin{
-	  margin-top: 25% !important;
-	}
+    .center-tip{
+        left: -100%;
+        margin-left: -155% !important;
+    }
+
+    .right-tip{
+        left: -160%;
+        margin-left: -300%;
+    }
 }
 
-@media (max-width: 1200px) { 
-    .header-title {
-	   font-size: 15px !important;
-	}
-
-    .header-subtitle {
-	   font-size: 12px !important;
-	   margin-left: 0% !important;
-	}
-
-    .feature-text{
-      font-size: 12px !important;
-    }
+.container-width{
+    min-width: 700px !important;
 }
