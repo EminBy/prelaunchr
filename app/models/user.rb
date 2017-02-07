@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
     },
     {
       'count' => 5,
-      'html' => 'TAKE FLIGHT<br>KEY CHAIN',
+      'html' => 'SCRATCH FREE <br>KEY CHAIN', 
       'class' => 'three',
       'image' => ActionController::Base.helpers.asset_path('assets/biker/KeyChain.jpg')
     },
