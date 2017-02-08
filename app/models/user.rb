@@ -25,20 +25,20 @@ class User < ActiveRecord::Base
       'count' => 5,
       'html' => 'SCRATCH FREE <br>KEY CHAIN', 
       'class' => 'three',
-      'image' => ActionController::Base.helpers.asset_path('assets/biker/KeyChain.jpg')
+      'image' => ActionController::Base.helpers.asset_path('assets/biker/5.jpg')
     },
     {
       'count' => 20,
       'html' => 'MOTORCYCLE<br>PHONE HOLDER',
       'class' => 'four',
-      'image' => ActionController::Base.helpers.asset_path('assets/biker/phone_holder_20.jpg')
+      'image' => ActionController::Base.helpers.asset_path('assets/biker/20.jpg')
     },
     {
       'count' => 40,
       'html' => 'VIP<br>LOUNGE',
       'class' => 'five',
       'image' => ActionController::Base.helpers.asset_path(
-        'assets/biker/VIP_40.jpg')
+        'assets/biker/40.jpg')
     }
   ]
 
