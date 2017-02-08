@@ -5,14 +5,14 @@
 
 #sticker{
 	position:absolute;
-	top: 72%;
-	left: 8%;
+	top: 78%;
+	left: 4%;
 	max-width: 100%;
 	min-width: 10%;
 }
 
 .features-margin{
-  margin-top: 28% !important;
+  margin-top: 34% !important;
   margin-left: 0% !important;
 }
 
@@ -28,22 +28,20 @@
 }
 
 .header-title{
-    margin-top: 3% !important;
+    margin-top: 10% !important;
     font-size: 30px;
     color:  #e3bb08 !important;
     font-weight: bolder;
-	text-transform: uppercase;
 	font-family: Arial Rounded MT Bold;
-    margin-left: -5% !important;
+    margin-left: 0% !important;
 }
 
 .header-subtitle{
     font-size: 18px;
     color:  rgba(0, 0, 0, 0.5);
     font-weight: bolder;
-	text-transform: uppercase;
 	font-family: Arial Rounded MT Bold;
-	margin-left: 8% !important;
+	margin-left: 6% !important;
 }
 
 
@@ -82,15 +80,15 @@
 
 }
 
-@media (min-width: 984px) { 
+@media (max-width: 1010px) { 
     .header-title {
-	   font-size: 26px !important;
+	   font-size: 30px !important;
        margin-left: -12% !important;
 	}
 
     .header-subtitle {
 	   font-size: 18px !important;
-	   margin-left: 0% !important;
+	   margin-left: 6% !important;
 	}
 
     .feature-text{
