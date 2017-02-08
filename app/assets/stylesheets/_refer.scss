@@ -7,32 +7,9 @@
 	right: 0;
 }
 
-@media (min-width: 300px) { 
-	.imageAndText .col {
-		left: 330%;
-	}
-}
-
-@media (min-width: 601px) { 
-	.imageAndText .col {
-		left: 180%;
-	}
-}
-
-@media (min-width: 899px) { 
-	.imageAndText .col {
-		left: 150%;
-	}
-}
-
-@media (min-width: 1000px) { 
-	.imageAndText .col {
-		left: 60%;
-	}
-}
-
-@media (min-width: 1100px) { 
-	.imageAndText .col {
-		left: 0%;
-	}
+.container-width-refer{
+    min-width: 1300px !important;
+    min-height: 564px !important;
+    max-height: 800px !important;
+    max-width: 1600px !important;
 }
