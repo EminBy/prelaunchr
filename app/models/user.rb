@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
       'html' => 'EAOS<br>STICKER',
       'class' => 'two',
       'image' =>  ActionController::Base.helpers.asset_path(
-        'assets/biker/EAOS_Sticker_2.jpg')
+        'assets/biker/2.jpg')
     },
     {
       'count' => 5,

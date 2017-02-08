@@ -247,10 +247,9 @@ body#home{
 }
 
 #refer .header-image{
-	background: image-url("biker/thankyou.jpg") 0 0 no-repeat;
-	height: 40px;
+	background: image-url("biker/new_banner.jpg") center center no-repeat;
+	height: 36px;
 	position: relative;
-	width: 1600px;
 }
 
 #refer .header-color{
@@ -274,7 +273,7 @@ body#home{
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 10px;
+	margin-right: 21%;
 	z-index: 0;
 }
 
@@ -624,44 +623,3 @@ only screen and (min-device-pixel-ratio: 2) {
 		background-size: 16px 10px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
