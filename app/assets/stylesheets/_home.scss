@@ -12,7 +12,7 @@
 }
 
 .features-margin{
-  margin-top: 34% !important;
+  margin-top:  150px !important;
   margin-left: 0% !important;
 }
 
@@ -45,41 +45,6 @@
 }
 
 
-@media (max-width: 767px) { 
-    .header-title {
-	   font-size: 13px !important;
-	}
-
-    .header-subtitle {
-	   font-size: 7px !important;
-	}
-	.features-margin{
-	  margin-top: 15% !important;
-	}
-
-    .feature-text{
-      font-size: 1px !important;
-    }
-    
-} 
-
-@media (max-width: 983px) { 
-	.features-margin{
-	  margin-top: 25% !important;
-	}
-
-    .header-title {
-       font-size: 20px !important;
-       margin-left: -12% !important;
-    }
-
-    .header-subtitle {
-       font-size: 15px !important;
-       margin-left: 0% !important;
-    }
-
-}
-
 @media (max-width: 1010px) { 
     .header-title {
 	   font-size: 30px !important;
@@ -94,6 +59,7 @@
     .feature-text{
       font-size: 12px !important;
     }
+
 }
 
 .mytooltip {
@@ -163,6 +129,11 @@
 }
 
 @media (max-width: 1100px) { 
+
+    .features-margin{
+      margin-top: 160px !important;
+    }
+
     .mytooltip .mytooltiptext {
         width: 600%;
         font-size: 11px;
@@ -188,9 +159,12 @@
 }
 
 .container-width{
-    min-width: 700px !important;
+    min-width: 1005px !important;
+    min-height: 564px !important;
 }
 
-.home-biker-height{
-    height: 480px !important;
+@media (max-width: 1010px) {
+    .home-biker-height{
+        height: 410px !important;
+    }
 }
