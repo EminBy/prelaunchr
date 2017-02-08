@@ -12,7 +12,7 @@
 }
 
 .features-margin{
-  margin-top:  150px !important;
+  margin-top:  300px !important;
   margin-left: 0% !important;
 }
 
@@ -126,6 +126,14 @@
 
 .mytooltip:hover .mytooltiptext {
     visibility: visible;
+}
+
+
+@media (max-width: 1400px) { 
+
+    .features-margin{
+      margin-top: 200px !important;
+    }
 }
 
 @media (max-width: 1100px) { 
