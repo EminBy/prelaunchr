@@ -29,7 +29,7 @@
 
 .header-title{
     margin-top: 10% !important;
-    font-size: 30px;
+    font-size: 35px;
     color:  #e3bb08 !important;
     font-weight: bolder;
 	font-family: Proxima Nova Alt;
@@ -37,13 +37,18 @@
 }
 
 .header-subtitle{
-    font-size: 18px;
+    font-size: 25px;
     color:  rgba(0, 0, 0, 0.5);
     font-weight: bolder;
 	font-family: Proxima Nova Alt;
 	margin-left: 6% !important;
 }
 
+@media (max-width: 1200px) { 
+    .header-title {
+       font-size: 30px !important;
+    }
+}
 
 @media (max-width: 1030px) { 
     .header-title {
@@ -52,7 +57,7 @@
 	}
 
     .header-subtitle {
-	   font-size: 18px !important;
+	   font-size: 23px !important;
 	   margin-left: 6% !important;
 	}
 
