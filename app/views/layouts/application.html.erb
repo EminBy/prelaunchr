@@ -13,13 +13,7 @@
   <meta property="og:title" content="HelmetBuds"/>
   <meta property="og:description" content="The ultimate audio experience for riders. Don’t want to leave you all behind. Check out HelmetBuds here" />
   <meta property="og:url" content="<%= root_url %>"/>
-  <% if @is_mobile %>
-    <% if @bodyId == 'home' %>
-      <meta name="viewport" content="width=1600" />
-    <% else %>
-      <meta name="viewport" content="width=1120" />
-    <% end %>
-  <% end %>
+
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>

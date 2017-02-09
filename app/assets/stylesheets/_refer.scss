@@ -13,3 +13,30 @@
     max-height: 800px !important;
     max-width: 1600px !important;
 }
+
+#refer{
+	background: #FFF;
+}
+
+#refer .page-content{
+	width: 1120px;
+	margin: 0 auto;
+	z-index: 0;
+	position: relative;
+}
+
+#refer .header-image{
+    width: 100%;
+    height: 30px;
+	background: image-url("biker/new_banner.jpg") center center no-repeat;
+}
+
+#refer .header-color{
+	background-color: #E3BB01 !important;
+}
+
+.biker-responsive{
+    display: block;
+    height: 18em;
+    max-width: 100%;
+}

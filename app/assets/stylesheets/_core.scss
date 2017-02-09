@@ -235,28 +235,6 @@ body#home{
 	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
-#refer{
-	background: #FFF;
-}
-
-#refer .page-content{
-	width: 1120px;
-	margin: 0 auto;
-	z-index: 0;
-	position: relative;
-}
-
-#refer .header-image{
-	background: image-url("biker/new_banner.jpg") center center no-repeat;
-	height: 36px;
-	position: relative;
-}
-
-#refer .header-color{
-	background-color: #E3BB01 !important;
-}
-
-
 #refer .hero{
     background: image-url("biker/biker_2.jpg") 0 0 no-repeat;
     background-size: auto 446px;
@@ -266,15 +244,14 @@ body#home{
 	    background-color: #CCC7C1;
 }
 
-
-#refer .share-wrap{
-	float: right;
-	width: 400px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: .13em;
-	margin-right: 21%;
-	z-index: 0;
+#refer .share-wrap {
+    float: right;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    z-index: 0;
+    margin-right: 4%;
 }
 
 #refer .share-wrap .why{
