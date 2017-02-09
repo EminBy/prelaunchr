@@ -2,78 +2,77 @@
   <%= stylesheet_link_tag "bootstrap3.0", :media => "all" %>
 </head>
 
-<div class='container-width'>
-  <div class="row bg-white" >
-    <div class="col-md-7 col-xs-7" id="counter">
-      <%= image_tag("/assets/biker/1000px.jpg", :class => "img-responsive home-biker-height", :height => '300') %>
-      <%= image_tag("/assets/biker/kickstarter.png", :class => "img-responsive", :id => "sticker") %>
+
+<div class="row bg-white" >
+  <div class="col-md-7 col-xs-7" id="counter">
+    <%= image_tag("/assets/biker/1000px.jpg", :class => "img-responsive home-biker-height", :height => '300') %>
+    <%= image_tag("/assets/biker/kickstarter.png", :class => "img-responsive", :id => "sticker") %>
+  </div>
+
+  <div class="col-md-5 col-xs-5">
+
+    <div class="row header-title">
+      HelmetBuds Are Coming
+    </div>
+    <div class="row header-subtitle">
+      <nav> Smart Earphones for Riders </nav>
     </div>
 
-    <div class="col-md-5 col-xs-5">
+    <div class= "row">
+	    <div class="features-margin">
+	        <div class="col-md-3 col-xs-3">
 
-      <div class="row header-title">
-        HelmetBuds Are Coming
-      </div>
-      <div class="row header-subtitle">
-        <nav> Smart Earphones for Riders </nav>
-      </div>
-
-      <div class= "row">
-  	    <div class="features-margin">
-  	        <div class="col-md-3 col-xs-3">
-
-              <div class="mytooltip"><%= image_tag("/assets/biker/biker-icon.jpg",  :class => "img-responsive") %>
-                <span class="mytooltiptext left-tip">
-                  We designed everything based on feedback from hundreds of riders like yourself. Our earbuds, don’t fall out while riding and they fit in <br> your helmet. Wear them on the ride or at the gym. <br> Use our wireless remote without taking your hands off the handlebar.
-                </span>
-              </div>
+            <div class="mytooltip"><%= image_tag("/assets/biker/biker-icon.jpg",  :class => "img-responsive") %>
+              <span class="mytooltiptext left-tip">
+                We designed everything based on feedback from hundreds of riders like yourself. Our earbuds, don’t fall out while riding and they fit in <br> your helmet. Wear them on the ride or at the gym. <br> Use our wireless remote without taking your hands off the handlebar.
+              </span>
             </div>
-        
-  	        <div class="col-md-4 col-xs-4 col-md-offset-1 col-xs-offset-1">
-              <div class="mytooltip"><%= image_tag("/assets/biker/ear-shield-icon.jpg",  :class => "img-responsive") %>
-                <span class="mytooltiptext center-tip center-font">
-                  Studies* show, only 15 minutes of Riding can do <span class='feature-text'>permanent damage </span>to your hearing and even helmets don't cut off enough wind noise. Don't lose your hearing. We designed our earbuds to protect your hearing. As a result, you can hear every beat at any speed. <br> <span class='small-font'> *http://www.hearingtestlabs.com/motorcycle.htm & https://www.ncbi.nlm.nih.gov/pmc/articles/PMC539364/ </span>
-                </span>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-xs-4">
-              <div class="mytooltip"><%= image_tag("/assets/biker/hear_stuff_ icon.jpg",  :class => "img-responsive") %>
-                <span class="mytooltiptext right-tip">
-                  Isolation keeps unwanted road noise out. Our intelligent software 
-                  allows you to hear Horns, Sirens and other important sounds. Our 
-                  beats feel real. We source our speakers from a company with 
-                  decades of experience. It’s audiophile level sound.
-                </span>
-              </div>
-            </div>
-  	    </div>
-      </div>
-
-      <div class= "row">
-          <div class="col-md-3 col-xs-3 ">
-              <nav class="feature-text"> 
-                For The Rider
-              </nav>
           </div>
-          <div class="col-md-4 col-xs-4 col-md-offset-1 col-xs-offset-1">
-            <nav class="feature-text"> Avoid Hearing <br> Damage </nav>
+      
+	        <div class="col-md-4 col-xs-4 col-md-offset-1 col-xs-offset-1">
+            <div class="mytooltip"><%= image_tag("/assets/biker/ear-shield-icon.jpg",  :class => "img-responsive") %>
+              <span class="mytooltiptext center-tip center-font">
+                Studies* show, only 15 minutes of Riding can do <span class='feature-text'>permanent damage </span>to your hearing and even helmets don't cut off enough wind noise. Don't lose your hearing. We designed our earbuds to protect your hearing. As a result, you can hear every beat at any speed. <br> <span class='small-font'> *http://www.hearingtestlabs.com/motorcycle.htm & https://www.ncbi.nlm.nih.gov/pmc/articles/PMC539364/ </span>
+              </span>
+            </div>
           </div>
+
           <div class="col-md-4 col-xs-4">
-            <nav class="feature-text">&nbsp;Hear The <br> Important Stuff </nav>
+            <div class="mytooltip"><%= image_tag("/assets/biker/hear_stuff_ icon.jpg",  :class => "img-responsive") %>
+              <span class="mytooltiptext right-tip">
+                Isolation keeps unwanted road noise out. Our intelligent software 
+                allows you to hear Horns, Sirens and other important sounds. Our 
+                beats feel real. We source our speakers from a company with 
+                decades of experience. It’s audiophile level sound.
+              </span>
+            </div>
           </div>
-      </div>
+	    </div>
+    </div>
+
+    <div class= "row">
+        <div class="col-md-3 col-xs-3 ">
+            <nav class="feature-text"> 
+              For The Rider
+            </nav>
+        </div>
+        <div class="col-md-4 col-xs-4 col-md-offset-1 col-xs-offset-1">
+          <nav class="feature-text"> Avoid Hearing <br> Damage </nav>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <nav class="feature-text">&nbsp;Hear The <br> Important Stuff </nav>
+        </div>
     </div>
   </div>
+</div>
 
-  <div class="row">
+<div class="row">
 
-      <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-        <% if Rails.application.config.ended %>
-          <%= render "users/campaign_ended" %>
-        <% else %>
-          <%= render "users/campaign_ongoing" %>
-        <% end %>
-      </div>
-  </div>
+    <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+      <% if Rails.application.config.ended %>
+        <%= render "users/campaign_ended" %>
+      <% else %>
+        <%= render "users/campaign_ongoing" %>
+      <% end %>
+    </div>
 </div>
